@@ -32,7 +32,7 @@ namespace Lommeregnerforms
             double a = Convert.ToDouble(textBox1.Text);
             double b = Convert.ToDouble(textBox2.Text);
             double c = plus.Plus(a, b);
-            //MessageBox.Show($"{c}");
+            MessageBox.Show($"{a} + {b} = {c}");
         }
 
         public void button2_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace Lommeregnerforms
             double a = Convert.ToDouble(textBox1.Text);
             double b = Convert.ToDouble(textBox2.Text);
             double c = minus.Minus(a, b);
-            //MessageBox.Show($"{c}");
+            MessageBox.Show($"{a} - {b} = {c}");
         }
 
         public void button3_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace Lommeregnerforms
             double a = Convert.ToDouble(textBox1.Text);
             double b = Convert.ToDouble(textBox2.Text);
             double c = gange.Gange(a, b);
-            //MessageBox.Show($"{c}");
+            MessageBox.Show($"{a} * {b} = {c}");
         }
 
         public void button4_Click(object sender, EventArgs e)
@@ -56,13 +56,7 @@ namespace Lommeregnerforms
             double a = Convert.ToDouble(textBox1.Text);
             double b = Convert.ToDouble(textBox2.Text);
             double c = division.Division(a, b);
-        }
-
-        public void button5_Click(object sender, EventArgs e)
-        {
-
-            
-            MessageBox.Show($"{c}");
+            MessageBox.Show($"{a} / {b} = {c}");
         }
     }
 }
