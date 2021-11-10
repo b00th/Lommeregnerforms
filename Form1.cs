@@ -18,47 +18,50 @@ namespace Lommeregnerforms
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        public void textBox1_TextChanged(object sender, EventArgs e)
         {
             
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        public void textBox2_TextChanged(object sender, EventArgs e)
         {
            
         }
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            int c = a + b;
-            MessageBox.Show($"{c}");
-
-            Plus(a, b);
+            double a = Convert.ToDouble(textBox1.Text);
+            double b = Convert.ToDouble(textBox2.Text);
+            double c = plus.Plus(a, b);
+            //MessageBox.Show($"{c}");
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            int c = a + b;
-            MessageBox.Show($"{c}");
-
+            double a = Convert.ToDouble(textBox1.Text);
+            double b = Convert.ToDouble(textBox2.Text);
+            double c = minus.Minus(a, b);
+            //MessageBox.Show($"{c}");
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        public void button3_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            int c = a + b;
-            MessageBox.Show($"{c}");
+            double a = Convert.ToDouble(textBox1.Text);
+            double b = Convert.ToDouble(textBox2.Text);
+            double c = gange.Gange(a, b);
+            //MessageBox.Show($"{c}");
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        public void button4_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            int c = a + b;
+            double a = Convert.ToDouble(textBox1.Text);
+            double b = Convert.ToDouble(textBox2.Text);
+            double c = division.Division(a, b);
+        }
+
+        public void button5_Click(object sender, EventArgs e)
+        {
+
+            
             MessageBox.Show($"{c}");
         }
     }

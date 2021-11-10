@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lommeregnerforms
 {
-    class minus
+    class division
     {
-        public static double Minus(double a, double b) 
+        public static double Division(double a, double b)
         {
-            double c = a - b;
+            double c = a / b; 
 
             return c;
         }
