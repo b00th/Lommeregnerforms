@@ -32,7 +32,7 @@ namespace Lommeregnerforms
             double a = Convert.ToDouble(textBox1.Text);
             double b = Convert.ToDouble(textBox2.Text);
             double c = plus.Plus(a, b);
-            MessageBox.Show($"{a} + {b} = {c}");
+            MessageBox.Show($"{a} + {b} = {c} hi mom im a Pro Programmer");
         }
 
         public void button2_Click(object sender, EventArgs e)

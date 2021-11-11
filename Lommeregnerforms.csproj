@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="UmbracoForms" Version="8.8.0" />
+  </ItemGroup>
+
 </Project>
